@@ -1,0 +1,288 @@
+/* Navbar */
+.pastel-navbar {
+    background: linear-gradient(135deg, #f8f3e9, #e2d6c7); /* Gradiente suave */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.8rem; /* Aumenta o tamanho da logo */
+    color: #5d5750 !important; /* Cor suave para o texto */
+}
+
+.nav-link {
+    color: #5d5750 !important; /* Cor suave para os links */
+    transition: color 0.3s; /* Transição suave para hover */
+}
+
+.nav-link:hover {
+    color: #a5a58d; /* Cor ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado no hover */
+}
+
+.navbar-toggler {
+    border-color: #5d5750; /* Cor do contorno do botão */
+}
+
+.navbar-toggler-icon {
+    background-color: #5d5750; /* Cor do ícone do menu */
+}
+
+/* Para menu mobile */
+@media (max-width: 768px) {
+    .navbar-nav {
+        background-color: #f8f3e9; /* Cor de fundo do menu em mobile */
+    }
+}
+
+/* Carrossel */
+.carousel-item img {
+    height: 500px; /* Ajusta a altura das imagens no carrossel */
+    object-fit: cover;
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.carousel-caption h5 {
+    font-size: 2.5rem; /* Aumenta o tamanho do título */
+    font-weight: bold;
+    color: #5d5750;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra suave para contraste */
+}
+
+.carousel-caption p {
+    font-size: 1.2rem; /* Aumenta o tamanho do texto */
+    color: #8d867a;
+}
+
+/* Container dos cards */
+.container {
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 0; /* Remove o padding lateral */
+    max-width: 1200px; /* Limita a largura máxima */
+}
+
+/* Cards */
+.pastel-card {
+    margin: 20px; /* Margem entre os cards */
+    background-color: #e9e2d4;
+    border: none;
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: transform 0.4s; /* Transição suave */
+}
+
+.pastel-card:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.pastel-card .card-title {
+    color: #5d5750;
+    font-weight: bold;
+}
+
+.pastel-card .card-text {
+    color: #8d867a;
+}
+
+/* Banner */
+.banner {
+    height: 400px;
+    background: linear-gradient(135deg, #f5e8d9 0%, #f1dace 100%); /* Gradiente suave */
+    color: #5d5750;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    color: #5d5750;
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Footer */
+.pastel-footer {
+    background-color: #e9ecef; /* Azul suave */
+    color: #5d5750;
+    padding: 20px 0; /* Adiciona padding ao footer */
+    text-align: center; /* Centraliza o texto */
+}
+
+.pastel-footer p {
+    margin: 0; /* Remove a margem padrão */
+    color: #5d5750;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #a5a58d;
+    border-color: #a5a58d;
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.btn-primary:hover {
+    background-color: #909378;
+    border-color: #909378;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 1.8rem; /* Reduz o tamanho do título em telas menores */
+    }
+
+    .carousel-caption p {
+        font-size: 1rem; /* Reduz o tamanho do texto em telas menores */
+    }
+}
+
+/* Estilização dos ícones em card de imóvel */
+.imovel-info {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+    margin-top: 10px; /* Espaço acima da div */
+}
+
+.imovel-info i {
+    font-size: 20px; /* Tamanho do ícone */
+    margin-right: 5px; /* Espaço entre o ícone e o texto */
+    color: #5d5750; /* Cor dos ícones */
+}
+
+.card-text {
+    display: flex; /* Usar flexbox para alinhar os itens horizontalmente */
+    flex-wrap: wrap; /* Permitir que os itens se movam para a próxima linha */
+}
+
+.card-text span {
+    margin-right: 15px; /* Espaçamento à direita de cada ícone */
+    margin-bottom: 5px; /* Espaçamento abaixo de cada ícone */
+    display: flex; /* Usar flexbox para alinhar o ícone e o número */
+    align-items: center; /* Centralizar verticalmente */
+}
+
+/* Estilos gerais para o filtro */
+#filters {
+    background-color: #377a83; /* Cor azul */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.filter-container {
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    margin-bottom: 30px; /* Margem inferior */
+}
+
+/* Botões de filtro */
+.filter-btn {
+    background-color: #4e8fb4; /* Cor de fundo azul */
+    color: #ffffff; /* Texto branco */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.filter-btn:hover {
+    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
+}
+
+/* Botão de limpar filtro */
+.btn-outline-secondary {
+    border-color: #007bff; /* Cor da borda */
+    color: #007bff; /* Texto azul */
+    transition: background-color 0.3s, color 0.3s; /* Transições suaves */
+}
+
+.btn-outline-secondary:hover {
+    background-color: #007bff; /* Fundo azul ao passar o mouse */
+    color: #ffffff; /* Texto branco */
+}
+
+/* Sobre Nós */
+.about-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.about-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.map-container {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+/* Footer */
+.pastel-footer {
+    background-color: #e9ecef; /* Azul suave */
+    color: #5d5750;
+    padding: 20px 0; /* Adiciona padding ao footer */
+    text-align: center; /* Centraliza o texto */
+}
+
+.pastel-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente o conteúdo dentro do container */
+}
+
+/* Para os itens do footer */
+.pastel-footer h5 {
+    margin-bottom: 10px; /* Espaçamento inferior para os títulos */
+}
+
+.pastel-footer .row {
+    justify-content: center; /* Garante que as colunas sejam centralizadas */
+}
+
+/* Cards */
+.pastel-card {
+    margin: 20px; /* Margem entre os cards */
+    background-color: #e9e2d4;
+    border: none;
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: transform 0.4s; /* Transição suave */
+    text-align: center; /* Centraliza o texto dentro do card */
+}
+
+/* Estilos gerais para o filtro */
+#filters {
+    background-color: #377a83; /* Cor azul */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centraliza o texto do filtro */
+}
+
+/* Sobre Nós */
+.about-section {
+    padding: 50px 0;
+    text-align: center; /* Centraliza o texto da seção */
+    background-color: #f7f7f7;
+}
+
+/* Map Container */
+.map-container {
+    margin: 50px 0;
+    text-align: center; /* Centraliza a seção do mapa */
+}
